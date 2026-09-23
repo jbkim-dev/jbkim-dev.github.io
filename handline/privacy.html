@@ -18,7 +18,7 @@
 <body>
 
 <h1>HANDLINE 개인정보처리방침</h1>
-<p class="muted">최종 업데이트: 2026-09-18</p>
+<p class="muted">최종 업데이트: 2026-09-24</p>
 
 <p>본 방침은 프리즘(Prism, 이하 "개발자")이 제공하는 모바일 게임 <strong>HANDLINE</strong>
 (Android 패키지 <code>com.prismdevs.handline</code>)의 개인정보 처리에 관한 것입니다.
@@ -38,6 +38,8 @@
           에이전트 등의 보안 로그</strong></li>
     </ul>
   </li>
+  <li><strong>광고 식별자</strong>(Advertising ID), 광고 상호작용 정보, 앱 성능·진단 정보,
+      IP 주소(대략적인 위치 추정에 쓰일 수 있음) — Google AdMob 광고 SDK가 수집합니다.</li>
 </ul>
 <p>정확한 위치 정보, 연락처, 사진·미디어·파일, 문자메시지, 마이크, 카메라, 건강 정보는
    수집하지 않습니다. 결제 정보는 앱이 직접 다루지 않습니다.</p>
@@ -46,6 +48,7 @@
 <ul>
   <li>온라인 대전 기능 제공(계정 인증, 방 매칭, 대국 동기화)</li>
   <li>서비스 운영·오류 대응·부정 이용 방지</li>
+  <li>광고 표시 및 관련 측정(AdMob)</li>
 </ul>
 
 <h2>3. 제3자 서비스</h2>
@@ -54,13 +57,18 @@
       <a href="https://supabase.com/privacy">supabase.com/privacy</a></li>
   <li><strong>Google 로그인 / Google Play 서비스</strong> —
       <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li><strong>Google AdMob</strong>(광고) —
+      <a href="https://support.google.com/admob/answer/6128543">Google 광고 정책</a></li>
 </ul>
 <p>모든 통신은 HTTPS/WSS로 암호화되어 전송됩니다.</p>
 
 <h2>4. 광고</h2>
-<p>현재 버전은 광고 SDK를 아직 연동하지 않았습니다. 추후 광고(및 관련 광고 식별자
-   수집)를 추가하면 실제 데이터 처리 내용을 반영해 이 방침과 Google Play 데이터 보안
-   정보를 함께 갱신합니다.</p>
+<p>게임은 두 가지 광고를 표시합니다: 이용자가 직접 선택해 칩을 받는 <strong>보상형 광고</strong>와,
+   연습 대전을 새로 시작할 때 가끔 표시되는 <strong>전면 광고</strong>입니다. 온라인 대전 중에는
+   전면 광고를 표시하지 않습니다. 유럽경제지역(EEA)·영국·스위스 이용자에게는 Google
+   User Messaging Platform(UMP)으로 광고 동의를 요청하며, 앱의 <em>환경설정 → 광고
+   개인정보 설정</em>에서 언제든 변경할 수 있습니다. 기기 설정에서 광고 ID를 재설정하거나
+   맞춤 광고를 해제할 수도 있습니다.</p>
 
 <h2>5. 보관 및 삭제</h2>
 <p>온라인 관련 데이터는 계정이 활성 상태인 동안 보관합니다. 로그인 후 메인 화면의
@@ -84,8 +92,11 @@
 <p>HANDLINE is a card game by Prism (프리즘). Practice mode works with no account
 and stores data only on the device. Online play collects your Google account
 email and identifiers plus gameplay data, stored via Supabase. Data is
-encrypted in transit. No ad SDK is integrated yet; this policy will be updated
-when one is added. To request deletion of your account and associated data,
+encrypted in transit. Google AdMob shows an opt-in rewarded ad (chips) and an
+occasional interstitial before a new practice match (never during online play),
+and collects an advertising ID, ad interactions, diagnostics and IP address;
+EEA/UK users are asked for consent via Google UMP and can change it in
+Settings → Ad privacy options. To request deletion of your account and associated data,
 use the in-app account menu or the <a href="delete-account.html">account
 deletion page</a>. The game is not directed to children under 13. Contact:
 contact@prism-devs.com.</p>
