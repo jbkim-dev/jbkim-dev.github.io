@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PRISM Board Game</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f6f4ff; --panel:#ffffff; --line:#e3ddff; --accent:#5b3fe0; --text:#1d1733; --muted:#5b5570; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#120e24; --panel:#1c1735; --line:#332a5e; --accent:#b7a6ff; --text:#f1eeff; --muted:#b3acd0; }
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); word-break:keep-all; overflow-wrap:anywhere; font:16px/1.75 system-ui,-apple-system,"Noto Sans KR","Malgun Gothic",sans-serif; }
+    main { width:min(760px,calc(100% - 32px)); margin:0 auto; padding:48px 0 72px; }
+    header,section { background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:22px 24px; margin-bottom:14px; }
+    h1 { margin:0 0 4px; color:var(--accent); font-size:30px; }
+    h2 { margin:0 0 8px; color:var(--accent); font-size:18px; }
+    p, li { color:var(--muted); } p { margin:0 0 8px; } p:last-child { margin-bottom:0; }
+    ul { margin:4px 0; padding-left:20px; }
+    a { color:var(--accent); }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>PRISM Board Game</h1>
+    <p>오늘 뭐 할까? 모인 인원과 시간에 딱 맞는 보드게임을 골라드려요.</p>
+  </header>
+  <section>
+    <h2>주요 기능</h2>
+    <ul>
+      <li>오늘의 보드게임 — 인원·시간·난이도·분위기로 내 보유 게임 중에서 추천</li>
+      <li>내 컬렉션 — 보유·위시리스트·대여 상태, 즐겨찾기, 평점, 메모</li>
+      <li>플레이 기록과 통계 — 날짜별 기록, 참가자·점수·승자, 자주 한 게임</li>
+    </ul>
+  </section>
+  <section>
+    <h2>지원</h2>
+    <p>문의: <a href="mailto:contact@prism-devs.com">contact@prism-devs.com</a></p>
+    <p><a href="privacy.html">개인정보 처리방침</a> · <a href="delete-account.html">계정 및 데이터 삭제</a></p>
+  </section>
+</main>
+</body>
+</html>

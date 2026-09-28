@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PRISM Board Game 개인정보 처리방침</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f6f4ff; --panel:#ffffff; --line:#e3ddff; --accent:#5b3fe0; --text:#1d1733; --muted:#5b5570; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#120e24; --panel:#1c1735; --line:#332a5e; --accent:#b7a6ff; --text:#f1eeff; --muted:#b3acd0; }
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); word-break:keep-all; overflow-wrap:anywhere; font:16px/1.75 system-ui,-apple-system,"Noto Sans KR","Malgun Gothic",sans-serif; }
+    main { width:min(760px,calc(100% - 32px)); margin:0 auto; padding:48px 0 72px; }
+    header,section { background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:22px 24px; margin-bottom:14px; }
+    h1 { margin:0 0 8px; color:var(--accent); font-size:26px; line-height:1.35; }
+    h2 { margin:0 0 8px; color:var(--accent); font-size:18px; }
+    p, li { color:var(--muted); } p { margin:0 0 8px; } p:last-child { margin-bottom:0; }
+    ul { margin:4px 0 8px; padding-left:20px; } li { margin:2px 0; }
+    table { width:100%; border-collapse:collapse; font-size:15px; }
+    th, td { text-align:left; vertical-align:top; padding:8px 6px; border-top:1px solid var(--line); color:var(--muted); }
+    th { color:var(--text); font-weight:600; white-space:nowrap; }
+    a { color:var(--accent); } .date { font-size:14px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>PRISM Board Game 개인정보 처리방침</h1>
+    <p>PRISM Board Game(이하 “앱”)은 보드게임 컬렉션 관리, 플레이 기록, 오늘 할 보드게임 추천 기능을 제공합니다.
+      앱 개발자 프리즘(Prism, 이하 “개발자”)은 이 기능에 꼭 필요한 정보만 처리합니다.</p>
+    <p class="date">시행일: 2026년 9월 28일</p>
+  </header>
+
+  <section>
+    <h2>1. 처리하는 정보</h2>
+    <table>
+      <tr><th>구분</th><th>항목</th><th>목적</th></tr>
+      <tr><td>계정 정보</td><td>Google 계정의 이메일 주소, 이름, 프로필 사진 URL, Google 계정 식별자</td><td>로그인, 사용자 식별, 본인 데이터 연결</td></tr>
+      <tr><td>보드게임 컬렉션</td><td>등록한 게임, 보유 상태(소유·위시리스트·대여 등), 즐겨찾기, 평점, 보관 위치, 메모</td><td>컬렉션 관리, 오늘의 보드게임 추천</td></tr>
+      <tr><td>플레이 기록</td><td>플레이한 게임, 일시, 플레이 시간, 장소, 메모, 참가자 이름, 점수, 승자</td><td>기록·통계 제공, 최근 플레이를 반영한 추천</td></tr>
+      <tr><td>기기에만 저장</td><td>마지막 추천 조건, 추천에서 제외한 게임 목록, 이미지 캐시</td><td>앱 사용 편의. 개발자 서버로 전송되지 않습니다.</td></tr>
+    </table>
+    <p>플레이 기록의 참가자 이름은 사용자가 직접 입력하는 값입니다. 함께 플레이한 분의 실명 대신 별명을 쓰거나, 그분의 동의를 받아 입력해 주세요.</p>
+  </section>
+
+  <section>
+    <h2>2. 수집하지 않는 정보</h2>
+    <p>전화번호, 주소, 정확한 위치, 연락처, 사진·카메라, 마이크, 결제 정보, 건강 정보는 요청하지 않습니다.
+      광고, 분석, 크래시 수집 SDK를 사용하지 않으며 광고 식별자도 사용하지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>3. 처리 위탁과 외부 서비스</h2>
+    <ul>
+      <li><b>Supabase</b> — 계정 인증과 데이터 저장(데이터베이스). 서버 위치: 대한민국 서울(AWS ap-northeast-2).</li>
+      <li><b>Google 로그인</b> — Google 계정으로 로그인할 때 Google이 인증을 처리하고, 앱은 로그인 확인용 토큰과 위 1항의 계정 정보를 받습니다.</li>
+      <li><b>게임 이미지</b> — 게임 표지 이미지는 BoardGameGeek 이미지 서버에서 불러옵니다. 이때 해당 서버는 이미지 요청에 포함된 IP 주소 등 일반적인 접속 정보를 받을 수 있습니다.</li>
+    </ul>
+    <p>개발자는 개인정보를 판매하거나 광고 목적으로 제3자에게 제공하지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>4. 보관 기간과 삭제</h2>
+    <p>계정과 앱 데이터는 사용자가 계정 삭제를 요청할 때까지 보관합니다. 컬렉션 항목과 플레이 기록은 앱에서 언제든 직접 수정·삭제할 수 있습니다.</p>
+    <p>계정과 모든 데이터는 앱의 <b>계정 → 계정 삭제</b>에서 즉시 삭제할 수 있습니다. 앱을 쓸 수 없을 때는
+      <a href="delete-account.html">계정 및 데이터 삭제 안내</a>에 따라 메일로 요청할 수 있으며, 요청을 확인한 뒤 30일 이내에 삭제합니다.
+      기기에만 저장된 정보는 앱을 삭제하면 함께 지워집니다.</p>
+  </section>
+
+  <section>
+    <h2>5. 안전성 확보 조치</h2>
+    <p>모든 통신은 HTTPS로 암호화됩니다. 데이터베이스는 행 단위 접근 제어(RLS)를 적용해 로그인한 사용자 본인의 컬렉션과 플레이 기록만 조회·수정할 수 있습니다.</p>
+  </section>
+
+  <section>
+    <h2>6. 이용자의 권리</h2>
+    <p>이용자는 자신의 개인정보에 대한 열람, 정정, 삭제, 처리 정지를 요청할 수 있습니다. 대부분은 앱에서 직접 할 수 있고, 그 밖의 요청은 아래 연락처로 보내 주세요.</p>
+  </section>
+
+  <section>
+    <h2>7. 아동의 개인정보</h2>
+    <p>앱은 만 14세 미만 아동을 대상으로 하지 않으며 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>8. 문의 및 변경</h2>
+    <p>개인정보 관련 문의: <a href="mailto:contact@prism-devs.com">contact@prism-devs.com</a></p>
+    <p>앱 기능이나 외부 서비스가 바뀌면 이 방침과 시행일을 함께 갱신합니다.</p>
+  </section>
+</main>
+</body>
+</html>
