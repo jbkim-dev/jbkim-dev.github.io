@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>모아픽 MoaPick</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#fcf9f5; --panel:#ffffff; --line:#e9e5de; --accent:#be461c; --text:#302c28; --muted:#71675f; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#1c1916; --panel:#26221e; --line:#3a342e; --accent:#ff8a5c; --text:#f6f1eb; --muted:#c3b8ad; }
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); word-break:keep-all; overflow-wrap:anywhere; font:16px/1.75 system-ui,-apple-system,"Noto Sans KR","Malgun Gothic",sans-serif; }
+    main { width:min(760px,calc(100% - 32px)); margin:0 auto; padding:48px 0 72px; }
+    header,section { background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:22px 24px; margin-bottom:14px; }
+    h1 { margin:0 0 8px; color:var(--accent); font-size:26px; line-height:1.35; }
+    h2 { margin:0 0 8px; color:var(--accent); font-size:18px; }
+    p, li { color:var(--muted); } p { margin:0 0 8px; } p:last-child { margin-bottom:0; }
+    ol, ul { margin:4px 0 8px; padding-left:22px; } li { margin:2px 0; }
+    a { color:var(--accent); } .date { font-size:14px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>모아픽 MoaPick</h1>
+    <p>친구와 카드를 넘기며 식당·카페를 함께 고르고, 혼자일 땐 메뉴 카드 5장으로 “오늘 뭐 먹지?”를 30초 만에 끝내요.</p>
+  </header>
+  <section>
+    <h2>주요 기능</h2>
+    <ul>
+      <li>함께 고르기 — 방을 만들고 초대 링크를 보내면, 모두 같은 후보를 넘기며 좋아요가 겹치는 곳을 찾아요</li>
+      <li>최종 투표 — 후보가 여럿이면 상위 3곳 중 다 같이 한 번 더 골라요</li>
+      <li>혼자 고르기 — 조건을 고르고 메뉴 카드 5장을 넘기면 오늘의 메뉴를 정해 줘요</li>
+      <li>내 음식 취향 — 좋아하는 종류와 못 먹는 음식, 최근 먹은 메뉴를 반영해 추천해요</li>
+    </ul>
+  </section>
+  <section>
+    <h2>지원</h2>
+    <p>문의: <a href="mailto:contact@prism-devs.com">contact@prism-devs.com</a></p>
+    <p><a href="privacy.html">개인정보 처리방침</a> · <a href="delete-account.html">계정 및 데이터 삭제</a></p>
+  </section>
+</main>
+</body>
+</html>
